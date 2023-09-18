@@ -8,18 +8,14 @@ export default function Iniciar(){
         <View style = {styles.container}>
             <View style = {styles.containerHeader}>
             <Text style = {styles.tittle}>
-                Bem Vindo
+            V
             </Text>
-            <TouchableOpacity onPress ={()=>navigation.navigate("Errado")}style = {styles.button}>
+            <TouchableOpacity style = {styles.button}>
                 <Text style = {styles.buttonText}>
-                    Começar!
+                    Próximo
                 </Text>
             </TouchableOpacity>
             </View>
-            <View style = {styles.containerImage}>
-                <Image style = {styles.angrybirds} source={require('../../assets/angrybirds.jpg')}/>  
-            </View>
-            
         </View>
     )
 }
@@ -27,29 +23,22 @@ export default function Iniciar(){
 const styles = StyleSheet.create ({
     container: {
         flex: 1,
-        backgroundColor: '#CE2CE5',
-    },
-    angrybirds:{
-        width: '80%',
-        height: '60%',
-        alignSelf: 'center'
+        backgroundColor: 'green',
     },
     containerHeader:{
-        height: '60%',
-        marginTop: '5%'
-    },
-    containerImage:{
-        height: '50%',
+        height: '90%',
+        justifyContent: 'center'
     },
     tittle:{
         color: '#fff',
-        fontWeight: 'bold',
-        fontSize: 34,
-        alignSelf: 'center'
+        fontWeight: '900',
+        fontSize: 300,
+        alignSelf: 'center',
     },
     buttonText:{
         fontWeight: 'bold',
         fontSize: 22,
-        alignSelf: 'center'
-    }
+        alignSelf: 'center',
+        color: 'white',
+    },
 })
