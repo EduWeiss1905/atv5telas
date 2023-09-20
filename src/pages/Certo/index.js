@@ -1,8 +1,9 @@
 import {StatusBar} from "react"
 import {View, StyleSheet, Image, Text, TouchableOpacity } from "react-native"
 import {useNavigation} from "@react-navigation/native"
+import { Animation } from "react-native-animatable"
 
-export default function Iniciar(){
+export default function Certo(){
     const navigation= useNavigation()
     return(
         <View style = {styles.container}>
@@ -10,7 +11,7 @@ export default function Iniciar(){
             <Text style = {styles.tittle}>
             V
             </Text>
-            <TouchableOpacity style = {styles.button}>
+            <TouchableOpacity onPress = {()=>navigation.navigate('Quiz2')} style = {styles.button}>
                 <Text style = {styles.buttonText}>
                     Próximo
                 </Text>

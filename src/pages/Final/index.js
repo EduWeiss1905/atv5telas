@@ -1,15 +1,14 @@
 import {StatusBar} from "react"
 import {View, StyleSheet, Image, Text, TouchableOpacity } from "react-native"
 import {useNavigation} from "@react-navigation/native"
-import { Animation } from "react-native-animatable"
 
-export default function Errado(){
+export default function Final(){
     const navigation= useNavigation()
     return(
         <View style = {styles.container}>
             <View style = {styles.containerHeader}>
             <Text style = {styles.tittle}>
-            X
+            Parabenss!!!
             </Text>
             <TouchableOpacity onPress = {()=>navigation.navigate('Iniciar')}style = {styles.button}>
                 <Text style = {styles.buttonText}>
@@ -24,7 +23,7 @@ export default function Errado(){
 const styles = StyleSheet.create ({
     container: {
         flex: 1,
-        backgroundColor: 'red',
+        backgroundColor: 'green',
     },
     containerHeader:{
         height: '90%',
@@ -33,7 +32,7 @@ const styles = StyleSheet.create ({
     tittle:{
         color: '#fff',
         fontWeight: '900',
-        fontSize: 300,
+        fontSize: 60,
         alignSelf: 'center',
     },
     buttonText:{
